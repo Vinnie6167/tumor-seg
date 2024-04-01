@@ -2,6 +2,7 @@ __pycache__/
 
 .ipynb_checkpoints/
 
+data/
 BraTS2020.zip
 BraTS2020_TrainingData/
 BraTS2020_ValidationData/

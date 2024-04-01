@@ -13,10 +13,11 @@ class TumorDataset(Dataset):
         self.img_dir = img_dir
         # TODO: Transformations
         # self.transform = v2.Compose([
-        #     v2.Normalize(mean=(,), std=(,))
+        #     v2.Normalize(mean=(100.9358), std=(torch.sqrt(233677.6719)))
         # ])
 
     def __len__(self):
+        return 100 # TODO: Remove
         return len(glob.glob(f'{self.img_dir}/*/'))
 
     def __getitem__(self, idx):
